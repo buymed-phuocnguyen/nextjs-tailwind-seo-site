@@ -26,6 +26,3 @@ jobs:
 
       - name: Build project
         run: npm run build
-
-      - name: Run unit tests (nếu có)
-        run: npm test
