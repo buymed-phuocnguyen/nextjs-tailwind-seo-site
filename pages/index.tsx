@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Đây là trang chủ của website xây dựng bằng Next.js và Tailwind CSS." />
       </Head>
       <div>
-        <h1 className="text-2xl font-bold">Chào mừng đến với trang chủ</h1>
+        <h1 className="text-2xl font-bold">Chào mừng đến với trang chủ dev</h1>
         <p>Đây là website đơn giản sử dụng Next.js và Tailwind CSS.</p>
       </div>
     </>
