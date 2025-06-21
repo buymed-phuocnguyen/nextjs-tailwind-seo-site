@@ -38,3 +38,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## Struct
+/chat-frontend
+├── /components
+│   ├── /ui          ← Button, Input, Dialog...
+│   └── ChatBox.tsx  ← Custom component của bạn
+├── /pages
+│   ├── index.tsx    ← Trang landing
+│   ├── login.tsx    ← Trang login
+│   └── chat.tsx     ← Giao diện chat
+├── /lib
+│   ├── api.ts       ← Axios call
+│   └── socket.ts    ← Kết nối Socket.IO client
+├── /styles
+│   └── globals.css
+└── tailwind.config.js
+
+/components
+├── layout
+│   ├── GuestLayout.tsx       ← Dành cho chưa login
+│   └── AuthLayout.tsx        ← Dành cho đã login
+├── Sidebar.tsx
+├── Header.tsx
+
+/pages
+├── login.tsx
+├── register.tsx
+├── chat.tsx
+
+
