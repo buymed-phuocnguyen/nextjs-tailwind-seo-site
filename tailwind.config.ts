@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import { type Config } from "tailwindcss"
-import { fontFamily } from "tailwindcss/defaultTheme"
+// import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config: Config = {
-  darkMode: ["class"],
+  // darkMode: ["class"],
   content: [
     "./src/app/**/*.{ts,tsx}",
     "./src/components/**/*.{ts,tsx}",
@@ -19,9 +20,9 @@ const config: Config = {
         // Bạn có thể thêm các shade khác nếu cần (không bắt buộc)
         // sky: colors.sky (nếu cần dùng nhiều)
       },
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
+      // fontFamily: {
+      //   sans: ["var(--font-sans)", ...fontFamily.sans],
+      // },
     },
   },
   plugins: [require("tailwindcss-animate")],

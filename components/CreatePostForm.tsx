@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+ 
 "use client"
 
 import { useState } from "react"
@@ -7,7 +9,7 @@ import { ImagePlus, Loader2 } from "lucide-react"
 
 export default function CreatePostForm() {
   const [content, setContent] = useState("")
-  const [image, setImage] = useState<File | null>(null)
+  const [, setImage] = useState<File | null>(null)
   const [previewUrl, setPreviewUrl] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
 

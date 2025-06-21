@@ -5,7 +5,7 @@ const conversations = [
   { id: "2", name: "Linh", lastMessage: "Lúc nào rảnh nhắn nhé!" },
 ]
 
-export default function ChatSidebar({ selectedId, onSelect }) {
+export default function ChatSidebar({ selectedId, onSelect }: { selectedId: string, onSelect: (_v: string) => void }) {
   return (
     <aside className="w-72 bg-white border-r h-full flex flex-col">
       <div className="p-4 border-b flex items-center gap-2 text-sky-600 font-semibold text-lg">

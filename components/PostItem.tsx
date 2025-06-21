@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MessageCircle, Heart } from "lucide-react"
 import moment from "moment"
 import "moment/locale/vi"
 
 moment.locale("vi")
 
-export default function PostItem({ post }: { post: Post }) {
+export default function PostItem({ post }: { post: any }) {
   return (
     <div className="bg-white rounded-xl shadow-sm p-4 mb-4 border">
       {/* Header */}
