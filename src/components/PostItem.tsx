@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { MessageCircle, Heart } from "lucide-react"
-import moment from "moment"
-import "moment/locale/vi"
+// import moment from "moment"
+// import "moment/locale/vi"
 
-moment.locale("vi")
+// moment.locale("vi")
 
 export default function PostItem({ post }: { post: any }) {
   return (
@@ -18,7 +18,7 @@ export default function PostItem({ post }: { post: any }) {
         />
         <div>
           <div className="font-semibold text-sky-700">{post.author.name}</div>
-          <div className="text-xs text-gray-500">{moment(post.createdAt).fromNow()}</div>
+          {/* <div className="text-xs text-gray-500">{moment(post.createdAt).fromNow()}</div> */}
         </div>
       </div>
 
